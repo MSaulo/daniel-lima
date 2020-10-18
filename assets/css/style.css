@@ -30,6 +30,10 @@ p {
   margin: 0 0 30px 0;
 }
 
+p strong {
+  color: #149205;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -136,6 +140,8 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(90deg, rgba(64,127,44,0.92) 0%, rgba(149,167,3,0.92) 25%, rgba(254,194,0,0.92) 50%, rgba(254,218,0,0.92) 75%);
   padding: 18px 0;
 }
+
+
 
 #header .logo {
   font-size: 32px;
@@ -304,9 +310,17 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  line-height: 1;
+  line-height: 1.4;
   cursor: pointer;
   text-align: right;
+}
+
+#mobile-nav-button .icofont-navigation-menu {
+  transition: all 0.5s;
+}
+
+#mobile-nav-button.mobile-header-scrolled .icofont-navigation-menu {
+  line-height: 2;
 }
 
 .mobile-nav-toggle i {
@@ -314,18 +328,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav {
+  width: 255px;
   position: fixed;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 9999;
   overflow-y: auto;
-  background: #fff;
+  background: #fbfbfb;
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
-  border-radius: 10px;
   padding: 10px 0;
 }
 
@@ -342,6 +356,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
+}
+
+.mobile-nav ul li {
+  border-bottom: 1px solid #13920517;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
@@ -826,6 +844,13 @@ section {
   padding: 0 20px 20px 20px;
 }
 
+
+@media (max-width: 768px) {
+  #about .about-text p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
 
 /* Services Section
 --------------------------------*/
