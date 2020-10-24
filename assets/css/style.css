@@ -626,12 +626,12 @@ section {
   padding: 20px 0;
   background-color: #f7f7f7;
   min-height: 40px;
-  margin-top: 90px;
+  margin-top: 72px;
 }
 
 @media (max-width: 992px) {
   .breadcrumbs {
-    margin-top: 80px;
+    margin-top: 70px;
   }
 }
 
@@ -1061,22 +1061,74 @@ section {
 
 #portfolio .portfolio-item {
   position: relative;
-  height: 360px;
+  padding-bottom: 35px;
   overflow: hidden;
 }
 
 #portfolio .portfolio-item figure {
   background: #000;
   overflow: hidden;
-  height: 240px;
+  height: 130px;
   position: relative;
   border-radius: 4px 4px 0 0;
   margin: 0;
 }
 
-#portfolio .portfolio-item figure:hover img {
-  opacity: 0.4;
+#portfolio .portfolio-item figure:hover img, #portfolio .portfolio-item figure:hover div {
+  opacity: 0.8;
   transition: 0.3s;
+}
+
+#portfolio .portfolio-item figure .news-subject {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 6px 12px 5px;
+  background-color: #149205;
+  color: #FFF;
+  font-size: 0.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#portfolio .portfolio-item figure .news-data {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  top: 15px;
+  right: 15px;
+  background-color: #149205;
+  border-radius: 50%;
+}
+
+#portfolio .portfolio-item figure .news-data span {
+  color: #FFF;
+}
+
+#portfolio .portfolio-item figure .news-data .news-data-day {
+  width: 42px;
+  position: absolute;
+  top: 4px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#portfolio .portfolio-item figure .news-data .news-data-month {
+  width: 42px;
+  position: absolute;
+  top: 21px;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+#portfolio .portfolio-item figure .link-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 #portfolio .portfolio-item figure .link-preview, #portfolio .portfolio-item figure .link-details {
@@ -1128,17 +1180,14 @@ section {
 
 #portfolio .portfolio-item .portfolio-info {
   background: #fff;
-  text-align: center;
-  padding: 30px;
-  height: 90px;
+  padding: 30px 25px;
   border-radius: 0 0 3px 3px;
 }
 
 #portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  line-height: 1px;
   font-weight: 700;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   padding-bottom: 0;
 }
 
@@ -1146,28 +1195,66 @@ section {
   color: #333;
 }
 
-#portfolio .portfolio-item .portfolio-info h4 a:hover {
+#portfolio .portfolio-item .portfolio-info h5 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 12px;
   color: #149205;
+  font-size: 16px;
 }
 
 #portfolio .portfolio-item .portfolio-info p {
   padding: 0;
   margin: 0;
-  color: #b8b8b8;
-  font-weight: 500;
+  color: #b1b1b1;
   font-size: 14px;
-  text-transform: uppercase;
 }
 
 /* Portfolio Details
 --------------------------------*/
-.portfolio-details {
-  padding-top: 30px;
-}
+/* .portfolio-details { */
+  /* padding-top: 30px; */
+/* } */
 
 .portfolio-details .portfolio-details-container {
   position: relative;
+  margin: 0 auto;
+  max-width: 980px;
 }
+
+.portfolio-details .portfolio-details-container .portfolio-details-header {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  padding: 0 35px 30px;
+}
+
+.portfolio-details .portfolio-details-container .portfolio-details-header h2 {
+  color: #FFF;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.portfolio-details .portfolio-details-container .portfolio-details-header p {
+  color: #e6e6e6;
+  margin-bottom: 5px;
+}
+
+.portfolio-details .portfolio-details-container .portfolio-details-header p.portfolio-details-info {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.portfolio-details .portfolio-details-container .portfolio-details-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.1) 80%);
+  z-index: 2;
+}
+
 
 .portfolio-details .portfolio-details-carousel {
   position: relative;
@@ -1221,7 +1308,12 @@ section {
 }
 
 .portfolio-details .portfolio-description {
-  padding-top: 50px;
+  margin: 0 auto;
+  max-width: 920px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  font-size: 1.1rem;
+  color: #222;
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -1233,6 +1325,10 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0 0 0 0;
+}
+
+.owl-carousel .owl-stage-outer {
+  height: 350px;
 }
 
 @media (max-width: 768px) {

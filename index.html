@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
@@ -29,12 +29,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: BizPage - v3.1.0
-  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Vue Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js" s></script>
 </head>
 
 <body>
@@ -49,16 +46,14 @@
             <a href="index.html">Daniel Lima</a>
             <span>Vereador - 15.999</span>
           </h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
               <li class="active"><a href="#header">Início</a></li>
-              <li><a href="#about">Minha História</a></li>
-              <li><a href="#projects">Pilares</a></li>
-              <li><a href="#portfolio">Blog</a></li>
-              <li><a href="#contact">Agende uma Visita</a></li>
+              <li><a href="./#about">Minha História</a></li>
+              <li><a href="./#projects">Pilares</a></li>
+              <li><a href="./#portfolio">Blog</a></li>
+              <li><a href="./#contact">Agende uma Visita</a></li>
 
             </ul>
           </nav><!-- .nav-menu -->
@@ -94,16 +89,6 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="carousel-item" style="background-image: url(assets/img/intro-carousel/2.jpg)">
-            <div class="carousel-container">
-              <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">At vero eos et accusamus</h2>
-                <p class="animate__animated animate__fadeInUp">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
-                <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
-              </div>
-            </div>
-          </div> -->
 
         </div>
 
@@ -156,7 +141,7 @@
                 cuidado, me <strong>guiaram</strong> nos caminhos do <strong>conhecimento cristão</strong>.
               </p>
               <p>
-                Meu <strong>pai</strong> sendo foi um <strong>homem simples</strong>, porém com um enorme desejo de vencer na vida. Ele
+                Meu <strong>pai</strong> sempre foi um <strong>homem simples</strong>, porém com um enorme desejo de vencer na vida. Ele
                 sempre foi meu <strong>exemplo de vida</strong>, pois é um dos maiores exemplos de superação. Olhando
                 para os meus pais, me recordo de vários exemplos, todavia o que me marca profundamente é
                 sua <strong>trajetória profissional</strong> (trabalho duro, honestidade, simplicidade, perseverança e
@@ -230,34 +215,6 @@
 
         </div>
 
-          <!-- <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-col">
-              <div class="img">
-                <img src="assets/img/about-plan.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-list-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Our Plan</a></h2>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="about-col">
-              <div class="img">
-                <img src="assets/img/about-vision.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Our Vision</a></h2>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-              </p>
-            </div>
-          </div>
-
-        </div> -->
-
       </div>
     </section><!-- End About Us Section -->
 
@@ -267,7 +224,6 @@
 
         <header class="section-header wow fadeInUp">
           <h3>Pilares</h3>
-          <!-- <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p> -->
         </header>
 
         <div class="row">
@@ -297,29 +253,6 @@
               única pessoa. Uma mudança que só pode acontecer, com a ajuda de todos. 
             </p>
           </div>
-          <!-- <div class="col-lg-6 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et turpis molestie, iaculis
-              nunc non, varius ipsum. Maecenas tincidunt purus non lacinia consectetur. Nam ultrices ornare
-              dui mollis pulvinar. Aliquam erat volutpat. Donec hendrerit, tortor in consequat vehicula, elit
-              libero tincidunt odio, sed blandit mauris sapien id mi. Donec mollis bibendum orci, id pharetra ex.
-              Aliquam blandit dignissim risus in hendrerit. Nam ultrices sit amet tellus non elementum. Curabitur
-              viverra libero at sapien imperdiet maximus. Vestibulum sit amet nisi fringilla, volutpat quam at,
-              commodo lectus. Suspendisse potenti. Vivamus id tincidunt elit, id tincidunt erat.
-            </p>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et turpis molestie, iaculis
-              nunc non, varius ipsum. Maecenas tincidunt purus non lacinia consectetur. Nam ultrices ornare
-              dui mollis pulvinar. Aliquam erat volutpat. Donec hendrerit, tortor in consequat vehicula, elit
-              libero tincidunt odio, sed blandit mauris sapien id mi. Donec mollis bibendum orci, id pharetra ex.
-              Aliquam blandit dignissim risus in hendrerit. Nam ultrices sit amet tellus non elementum. Curabitur
-              viverra libero at sapien imperdiet maximus. Vestibulum sit amet nisi fringilla, volutpat quam at,
-              commodo lectus. Suspendisse potenti. Vivamus id tincidunt elit, id tincidunt erat.
-            </p>
-          </div> -->
-          
 
         </div>
 
@@ -376,146 +309,33 @@
       <div class=" col-lg-12">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">Todas as Notícias</li>
-            <li data-filter=".filter-app">Educação</li>
-            <li data-filter=".filter-card">Infraestrutura</li>
-            <li data-filter=".filter-web">Projetos</li>
+            <li data-filter=".filter-education">Educação</li>
+            <li data-filter=".filter-infrastructure">Infraestrutura</li>
+            <li data-filter=".filter-projects">Projetos</li>
           </ul>
         </div>
       </div>
 
-      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+      <div id="app" class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
+        <div v-for="n in news">
+          <div v-bind:class="['col-lg-4 col-md-6 portfolio-item', newsSubjects[n.subject]]">
+            <div class="portfolio-wrap">
+              <figure>
+                <img v-bind:src="n.image" class="img-fluid" alt="">
+                <div class="news-subject" title="Assunto da notícia">{{ n.subject }}</div>
+                <div class="news-data" title="Data de publicação">
+                  <span class="news-data-day">{{ new Date(n.createdAt).getDate() }}</span>
+                  <span class="news-data-month">{{ monthName[new Date(n.createdAt).getMonth()] }}</span>
+                </div>
+                <a v-bind:href="`/news?name=${n.link}`" class="link-image" title="Ver mais..."></a>
+              </figure>
 
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">App 1</a></h4>
-              <p>App</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/web3.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Web 3"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">Web 3</a></h4>
-              <p>Web</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/app2.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="App 2"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">App 2</a></h4>
-              <p>App</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="assets/img/portfolio/card2.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/card2.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Card 2"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">Card 2</a></h4>
-              <p>Card</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="assets/img/portfolio/web2.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/web2.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Web 2"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">Web 2</a></h4>
-              <p>Web</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/app3.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="App 3"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">App 3</a></h4>
-              <p>App</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="assets/img/portfolio/card1.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/card1.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Card 1"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">Card 1</a></h4>
-              <p>Card</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="assets/img/portfolio/card3.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/card3.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Card 3"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">Card 3</a></h4>
-              <p>Card</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="assets/img/portfolio/web1.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/web1.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Web 1"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">Web 1</a></h4>
-              <p>Web</p>
+              <div class="portfolio-info">
+                <h4><a v-bind:href="`/news?name=${n.link}`">{{ n.title }}</a></h4>
+                <h5>{{ n.subtitle }}</h5>
+                <p>{{ n.body.substring(0, 105) + ' ...' }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -588,8 +408,8 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
+  
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -604,6 +424,7 @@
   <script src="assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="assets/js/vue/index.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
