@@ -70,7 +70,7 @@
           <div class="portfolio-details-header">
             <h2>{{ news.title }}</h2>
             <p>{{ news.subtitle }}</p>
-            <p class="portfolio-details-info">Fonte {{ news.source.link }} | {{ new Date(news.createdAt).toLocaleDateString() }}</p>
+            <p class="portfolio-details-info">Fonte <a v-bind:href="news.source.link">{{ news.source.name }}</a> | {{ new Date(news.createdAt).toLocaleDateString() }}</p>
           </div>
           <div class="owl-carousel portfolio-details-carousel">
             <img v-bind:src="news.image" class="img-fluid" alt="">
