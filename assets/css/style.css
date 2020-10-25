@@ -461,6 +461,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: 0;
   top: 70px;
+  width: 100%;
   /* left: 50px;
   right: 50px; */
 }
@@ -535,6 +536,16 @@ h1, h2, h3, h4, h5, h6 {
   #intro .carousel-control-prev, #intro .carousel-control-next {
     width: 5%;
   }
+}
+
+@media (max-width: 768px) {
+  #intro .carousel-fade .carousel-inner .carousel-item-position-left {
+    background-position: left;
+  }
+
+  #intro .carousel-fade .carousel-inner .carousel-item-position-right {
+    background-position: right;
+  } 
 }
 
 #intro .carousel-control-next-icon, #intro .carousel-control-prev-icon {
@@ -1016,7 +1027,7 @@ section {
 /* Portfolio Section
 --------------------------------*/
 #portfolio {
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 #portfolio #portfolio-flters {
