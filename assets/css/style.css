@@ -1363,7 +1363,32 @@ section {
   height: 350px;
 }
 
+.owl-carousel .owl-stage {
+  height: 100% !important;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  height: 100% !important;
+}
+
+.owl-carousel .owl-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
+  .portfolio-details .portfolio-details-container .portfolio-details-header h2 {
+    font-size: 18px;
+  }
+
+  .portfolio-details .portfolio-details-container .portfolio-details-header p {
+    font-size: 14px;
+  }
+
+  .portfolio-details .portfolio-details-container .portfolio-details-header p.portfolio-details-info {
+    font-size: 10px;
+  }
+
   .portfolio-details .portfolio-description h2 {
     width: 100%;
   }
