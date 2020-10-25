@@ -1231,6 +1231,7 @@ section {
   position: relative;
   margin: 0 auto;
   max-width: 980px;
+  margin-top: 73px;
 }
 
 .portfolio-details .portfolio-details-container .portfolio-details-header {
@@ -1336,6 +1337,26 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0 0 0 0;
+}
+
+.portfolio-details .news-notfound {
+  text-align: center;
+  margin: 90px 0 80px;
+}
+
+.portfolio-details .news-notfound i {
+  margin-top: 60px;
+}
+
+.portfolio-details .news-notfound h2 {
+  margin: 0;
+  margin-top: 26px;
+  font-size: 18pt;
+}
+
+.portfolio-details .news-notfound p {
+  margin: 0;
+  font-weight: 300;
 }
 
 .owl-carousel .owl-stage-outer {

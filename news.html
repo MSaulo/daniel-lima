@@ -64,23 +64,9 @@
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Notícias da Cidade</h2>
-        </div>
-
-      </div>
-    </section><!-- Breadcrumbs Section -->
-
-    <!-- ======= Portfolio Details Section ======= -->
     <section id="app" class="portfolio-details">
       <div class="container" v-if="news">
-
-
-
         <div class="portfolio-details-container">
           <div class="portfolio-details-bg"></div>
           <div class="portfolio-details-header">
@@ -96,6 +82,12 @@
         <div class="portfolio-description">
           <p v-html="news.body"></p>
         </div>
+      </div>
+
+      <div class="news-notfound" v-if="notFound">
+        <i class="fa fa-unlink fa-5x" aria-hidden="true"></i>
+        <h2>Desculpe, não encontramos sua notícia...</h2>
+        <p>Caso o erro persista entre em contato conosco <a href="mailto:danielmdb15999@gmail.com">danielmdb15999@gmail.com</a>.</p>
       </div>
     </section><!-- End Portfolio Details Section -->
 

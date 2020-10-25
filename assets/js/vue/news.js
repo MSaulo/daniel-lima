@@ -10,20 +10,23 @@ var app = new Vue({
     link: undefined,
     monthName: ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"],
     news: undefined,
+    notFound: false
   },
 
   async mounted() {
-    console.log('gg')
     this.link = this.$route.query.name;
     await this.fetchNews();
-    console.log(this.news);
   },
 
   methods: {
     fetchNews: async function () {
-      const news = await fetch(`http://api.daniellimarp.com.br/news/${this.link}`);
-      this.news = await news.json();
-      this.news.body = this.news.body.replace('\n', '<br>')
+      try {
+        const news = await fetch(`http://api.daniellimarp.com.br/news/${this.link}`);
+        this.news = await news.json();
+        this.news.body = this.news.body.replace('\n', '<br>');
+      } catch(ex) {
+        this.notFound = true;
+      }
 
       setTimeout(function() {
         // Portfolio details carousel
