@@ -1751,16 +1751,18 @@ section {
   background: #13a456;
 }
 
-#contact .social-links {
-  margin-top: 50px;
-
-  display: flex;
-  justify-content: center;
+#contact .social-links-container {
+  text-align: center;
 }
-    
+
+#contact .social-links {
+  margin: 50px 10px 0;
+  display: inline-block;
+}
+   
 #contact .social-links a {
   font-size: 20px;
-  display: inline-block;
+  display: block;
   background: #149205;
   color: #eee;
   line-height: 1.4;
