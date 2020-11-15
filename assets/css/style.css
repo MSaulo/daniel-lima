@@ -1392,9 +1392,14 @@ section {
   .portfolio-details .portfolio-description h2 {
     width: 100%;
   }
+  
   .portfolio-details .portfolio-info {
     position: static;
     margin-top: 30px;
+  }
+
+  .portfolio-details .img-news {
+    width: 100%;
   }
 }
 
